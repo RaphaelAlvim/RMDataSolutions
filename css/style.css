@@ -210,6 +210,11 @@ header nav {
 
 /* Responsividade */
 @media (max-width: 768px) {
+
+    main {
+        padding-top: 160px; /* ou ajuste conforme necessário */
+    }
+
     header nav {
         display: flex;
         flex-direction: column;
