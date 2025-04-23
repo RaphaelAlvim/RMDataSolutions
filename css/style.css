@@ -216,17 +216,35 @@ header nav {
     }
 
     nav .nav-links {
-        flex-direction: row;         /* Lado a lado */
-        flex-wrap: wrap;             /* Permite quebra de linha se necessário */
-        justify-content: center;     /* Centraliza os itens */
-        gap: 10px;
-        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
         padding: 10px 0;
+        width: 100%;
+        margin: 0;
     }
 
     nav .nav-links li {
-        flex: 1 1 auto;              /* Cada item ocupa espaço proporcional */
-        text-align: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav .nav-links li a {
+        display: inline-block;
+        padding: 8px 12px;
+        font-size: 15px;
+        text-decoration: none;
+        color: #fff;
+        background: transparent;
+        border-radius: 4px;
+    }
+
+    nav .nav-links li a.cta {
+        background-color: #ffffff;
+        color: #2a2a2a;
     }
 
     .intro .main-logo {
