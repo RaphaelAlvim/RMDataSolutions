@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem enviada</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/cookieconsent.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                palette: {
+                    popup: { background: "#2a2a2a" },
+                    button: { background: "#ffffff", text: "#2a2a2a" }
+                },
+                theme: "classic",
+                content: {
+                    message: "Este site utiliza cookies para melhorar a experiência do usuário.",
+                    dismiss: "Aceitar",
+                    link: "Saber mais",
+                    href: "../legal/politica-de-cookies.html"
+                }
+            });
+
+            // Redirecionar para a página inicial após 8 segundos
+            setTimeout(function() {
+                window.location.href = "../index.html";
+            }, 8000);
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="brand" style="text-decoration: none; color: #ffffff;">
+                RM Data Solutions
+            </a>
+            <ul class="nav-links">
+                <li><a href="../sobrenos.html">Sobre nós</a></li>
+                <li><a href="../servicos.html">Serviços</a></li>
+                <li><a href="../sua_empresa.html">Sua empresa</a></li>
+                <li><a href="../contacto.html" class="cta">Contacte-nos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Mensagem enviada com sucesso!</h2>
+            <div class="descricao">
+                <p>Obrigado por entrar em contacto com a RM Data Solutions.</p>
+                <p>Recebemos sua mensagem e responderemos em breve. Enquanto isso, sinta-se à vontade para explorar mais sobre os nossos serviços.</p>
+            </div>
+            <a href="index.html" class="btn">Voltar para o início</a>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="../legal/politica-de-privacidade.html">Declaração de privacidade</a></li>
+            <li><a href="../legal/politica-de-cookies.html">Política de cookies</a></li>
+            <li><a href="../legal/termos-de-utilizacao.html">Termos de utilização</a></li>
+            <li><a href="../legal/acessibilidade.html">Declaração de acessibilidade</a></li>
+            <li><a href="../legal/etica.html">Código de ética empresarial</a></li>
+            <li><a href="../legal/qualidade.html">Política de Qualidade</a></li>
+        </ul>
+        <p class="copyright">© 2025 RM Data Solutions. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
