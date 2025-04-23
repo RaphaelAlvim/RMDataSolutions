@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mensagem enviada</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/cookieconsent.js"></script>
+    <!--<script src="js/cookieconsent.js"></script>-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
     <script>
         window.addEventListener("load", function(){
             window.cookieconsent.initialise({
@@ -18,14 +20,9 @@
                     message: "Este site utiliza cookies para melhorar a experiência do usuário.",
                     dismiss: "Aceitar",
                     link: "Saber mais",
-                    href: "../legal/politica-de-cookies.html"
+                    href: "legal/politica-de-cookies.html"
                 }
             });
-
-            // Redirecionar para a página inicial após 8 segundos
-            setTimeout(function() {
-                window.location.href = "../index.html";
-            }, 8000);
         });
     </script>
 </head>

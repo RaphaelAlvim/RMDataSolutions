@@ -5,6 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto – RM Data Solutions</title>
     <link rel="stylesheet" href="css/style.css">
+    <!--<script src="js/cookieconsent.js"></script>-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                palette: {
+                    popup: { background: "#2a2a2a" },
+                    button: { background: "#ffffff", text: "#2a2a2a" }
+                },
+                theme: "classic",
+                content: {
+                    message: "Este site utiliza cookies para melhorar a experiência do usuário.",
+                    dismiss: "Aceitar",
+                    link: "Saber mais",
+                    href: "legal/politica-de-cookies.html"
+                }
+            });
+        });
+    </script>
 </head>
 <body>
     <header>
