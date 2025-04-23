@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM Data Solutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/cookieconsent.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                palette: {
+                    popup: { background: "#2a2a2a" },
+                    button: { background: "#ffffff", text: "#2a2a2a" }
+                },
+                theme: "classic",
+                content: {
+                    message: "Este site utiliza cookies para melhorar a experiência do usuário.",
+                    dismiss: "Aceitar",
+                    link: "Saber mais",
+                    href: "legal/politica-de-cookies.html"
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="brand" style="text-decoration: none; color: #ffffff;">
+                RM Data Solutions
+            </a>
+            <ul class="nav-links">
+                <li><a href="sobrenos.html">Sobre nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sua_empresa.html">Sua empresa</a></li>
+                <li><a href="contacto.html" class="cta">Contacte-nos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Nossos Serviços</h2>
+            <p class="descricao">A RM Data Solutions oferece soluções completas, adaptadas à realidade de cada empresa.</p>
+    
+            <div class="servicos-container">
+                <div class="servico">
+                    <div class="conteudo">
+                        <img src="images/icon-database.png" alt="Data Engineering" class="icone">
+                        <h2>Data Engineering</h2>
+                        <p>Organização, integração e migração de dados para ambientes seguros, escaláveis e eficientes.</p>
+                    </div>
+                    <a href="servicos/data_engieneering.html" class="btn">Ver mais</a>
+                </div>
+    
+                <div class="servico">
+                    <div class="conteudo">
+                        <img src="images/icon-bi.png" alt="Business Intelligence" class="icone">
+                        <h2>Business Intelligence</h2>
+                        <p>Criação de dashboards interativos e relatórios automatizados para decisões orientadas por dados.</p>
+                    </div>
+                    <a href="servicos/bi.html" class="btn">Ver mais</a>
+                </div>
+    
+                <div class="servico">
+                    <div class="conteudo">
+                        <img src="images/icon-ml.png" alt="Machine Learning e AI" class="icone">
+                        <h2>Machine Learning & AI</h2>
+                        <p>Modelos preditivos e soluções baseadas em IA para automação, previsão e otimização.</p>
+                    </div>
+                    <a href="servicos/ml-e-ai.html" class="btn">Ver mais</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="legal/politica-de-privacidade.html">Declaração de privacidade</a></li>
+            <li><a href="legal/politica-de-cookies.html">Política de cookies</a></li>
+            <li><a href="legal/termos-de-utilizacao.html">Termos de utilização</a></li>
+            <li><a href="legal/acessibilidade.html">Declaração de acessibilidade</a></li>
+            <li><a href="legal/etica.html">Código de ética empresarial</a></li>
+            <li><a href="legal/qualidade.html">Política de Qualidade</a></li>
+        </ul>
+        <p class="copyright">© 2025 RM Data Solutions. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
