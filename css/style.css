@@ -212,13 +212,21 @@ header nav {
 @media (max-width: 768px) {
     header nav {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     nav .nav-links {
-        flex-direction: column;
+        flex-direction: row;         /* Lado a lado */
+        flex-wrap: wrap;             /* Permite quebra de linha se necessário */
+        justify-content: center;     /* Centraliza os itens */
         gap: 10px;
-        align-items: flex-start;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav .nav-links li {
+        flex: 1 1 auto;              /* Cada item ocupa espaço proporcional */
+        text-align: center;
     }
 
     .intro .main-logo {
